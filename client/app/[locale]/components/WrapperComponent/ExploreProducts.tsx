@@ -42,7 +42,10 @@ export default function ExploreProducts() {
   return (
     <div className="explore-product">
       <h3 className="explore-product__title">
-        {t("productCard.exploreIn")} <span className="explore-product__title--bold">{t("productCard.products")}</span>
+        {t("productCard.exploreIn")}{" "}
+        <span className="explore-product__title--bold">
+          {t("productCard.products")}
+        </span>
       </h3>
       <div className="explore-product__categories-buttons">
         {productCategories.map((category) => {
@@ -61,17 +64,16 @@ export default function ExploreProducts() {
       <div>
         <div className="explore-product__list">
           {selectedGroup &&
-            selectedGroup
-              .slice(0, 8)
-              .map((item: IProps) => (
+            selectedGroup.slice(0, 8).map((item: IProps) => (
+              <div key={item.title} className="explore-product__list-item">
                 <ProductCard
-                  key={item.title}
                   title={item.title}
                   imgSrc={item.imgSrc}
                   group={item.group}
                   price={item.price}
                 />
-              ))}
+              </div>
+            ))}
         </div>
       </div>
     </div>

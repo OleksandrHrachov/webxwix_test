@@ -1,14 +1,7 @@
 .product-card {
-  flex-grow: 1;
-  max-width: 33%;
-  display: flex;
-  justify-content: center;
-
-  &__wrapper {
-    width: 312px;
-    height: 392px;
-    padding: 24px;
-  }
+  width: 312px;
+  height: 392px;
+  padding: 24px;
 
   &__inner {
     position: relative;
@@ -20,7 +13,7 @@
     position: absolute;
     left: 6px;
     color: #1a1a1a;
-    
+
     span {
       display: block;
     }
@@ -37,7 +30,6 @@
   }
 
   &__img {
-    width: 100%;
     object-fit: contain;
   }
 }
