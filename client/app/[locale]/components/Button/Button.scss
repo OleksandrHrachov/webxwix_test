@@ -1,0 +1,45 @@
+.button {
+  &--details {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 136px;
+    height: 48px;
+    border-radius: 12px;
+    color: #e8e8e8;
+    font-size: 16px;
+    background-color: #181818;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--category {
+    background-color: transparent;
+    color: #181818;
+    border-radius: 36px;
+    padding: 13px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    border: 1px solid #181818;
+
+    &:hover {
+      background-color: #181818;
+      color: #e8e8e8;
+    }
+  }
+
+  &--selected {
+    background-color: #181818;
+    color: #e8e8e8;
+  }
+}
