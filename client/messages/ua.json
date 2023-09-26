@@ -1,4 +1,8 @@
 {
+  "getPhone": {
+    "getYour": "Обери свій",
+    "iPhone": "iPhone"
+  },
   "productCard": {
     "priceFrom": "Від",
     "details": "Детальніше",

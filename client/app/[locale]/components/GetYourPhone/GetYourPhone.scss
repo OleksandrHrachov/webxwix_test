@@ -1,0 +1,28 @@
+.get-phone {
+  margin: 0 auto;
+  padding-top: 42px;
+  margin-bottom: 80px;
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 24px;
+    font-weight: 400;
+
+    &--bold {
+      font-weight: 900;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      flex-grow: 1;
+      max-width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
