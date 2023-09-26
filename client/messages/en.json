@@ -1,4 +1,8 @@
 {
+  "getPhone": {
+    "getYour": "Get Your",
+    "iPhone": "iPhone"
+  },
   "productCard": {
     "priceFrom": "From",
     "details": "Details",

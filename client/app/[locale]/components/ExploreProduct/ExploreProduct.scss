@@ -1,5 +1,6 @@
 .explore-product {
   margin: 0 auto;
+  padding-top: 42px;
 
   &__title {
     text-align: center;
@@ -15,6 +16,7 @@
   &__categories-buttons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 48px;
   }

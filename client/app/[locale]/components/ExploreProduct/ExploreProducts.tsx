@@ -40,7 +40,7 @@ export default function ExploreProducts() {
   };
 
   return (
-    <div className="explore-product">
+    <section className="explore-product">
       <h3 className="explore-product__title">
         {t("productCard.exploreIn")}{" "}
         <span className="explore-product__title--bold">
@@ -61,7 +61,7 @@ export default function ExploreProducts() {
           );
         })}
       </div>
-      <div>
+      
         <div className="explore-product__list">
           {selectedGroup &&
             selectedGroup.slice(0, 8).map((item: IProps) => (
@@ -75,7 +75,7 @@ export default function ExploreProducts() {
               </div>
             ))}
         </div>
-      </div>
-    </div>
+      
+    </section>
   );
 }
