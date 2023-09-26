@@ -13,7 +13,6 @@ export default function ProductCard({ title, imgSrc, group, price }: IProps) {
 
   return (
     <div className="product-card">
-      <div className="product-card__wrapper">
         <div className="product-card__inner">
           <div className="product-card__title">
             <span className="product-card__title-descr">{title}</span>
@@ -29,7 +28,6 @@ export default function ProductCard({ title, imgSrc, group, price }: IProps) {
           />
           <Button type="details">{t("productCard.details")}</Button>
         </div>
-      </div>
     </div>
   );
 }

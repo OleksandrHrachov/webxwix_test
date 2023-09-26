@@ -22,5 +22,13 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+
+    &-item {
+      flex-grow: 1;
+      max-width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
