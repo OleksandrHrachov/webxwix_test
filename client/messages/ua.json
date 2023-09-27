@@ -1,4 +1,11 @@
 {
+  "header": {
+    "home": "Головна",
+    "products": "Товари",
+    "entertainment": "Розваги",
+    "support": "Підтримка",
+    "search": "Пошук"
+  },
   "getPhone": {
     "getYour": "Обери свій",
     "iPhone": "iPhone"
@@ -8,6 +15,5 @@
     "details": "Детальніше",
     "exploreIn": "Ознайомтеся з",
     "products": "Продуктами"   
-  },
-  "header": "ЗАГОЛОВОК"
+  }
 }

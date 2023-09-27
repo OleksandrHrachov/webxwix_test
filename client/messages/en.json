@@ -1,4 +1,11 @@
 {
+  "header": {
+    "home": "Home",
+    "products": "Products",
+    "entertainment": "Entertainment",
+    "support": "Support",
+    "search": "Search"
+  },
   "getPhone": {
     "getYour": "Get Your",
     "iPhone": "iPhone"
@@ -8,6 +15,5 @@
     "details": "Details",
     "exploreIn": "Explore in",
     "products": "Products"
-  },
-  "header": "HEADER"
+  }
 }
