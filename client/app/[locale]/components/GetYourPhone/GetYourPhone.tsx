@@ -5,8 +5,7 @@ import { Categories } from "../../../store/types";
 import arrowRight from "../../../../public/arrowRight.svg";
 import "./GetYourPhone.scss";
 
-import { useAppDispatch, useAppSelector } from "../../../store/hooks";
-import { setState, selectGroup } from "../../../store/productSlice";
+import { useAppSelector } from "../../../store/hooks";
 import Link from "next/link";
 import Image from "next/image";
 
