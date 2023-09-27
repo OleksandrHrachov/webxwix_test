@@ -22,5 +22,8 @@
     "details": "Details",
     "exploreIn": "Explore in",
     "products": "Products"
+  },
+  "slider": {
+    "streamNow": "Stream Now"
   }
 }

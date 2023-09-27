@@ -70,3 +70,41 @@ export const productData = [
     price: '$799'
   }
 ];
+
+export const sliderData = [
+  { 
+    id: 'silo',
+    title: 'Silo',
+    imgSrc: 'silo.png',
+    initial: false,
+    genre: 'Thriller'
+  },
+  {
+    id: 'platonic',
+    title: 'Platonic',
+    imgSrc: 'platonic.png',
+    initial: false,
+    genre: 'Thriller'
+  },
+  {
+    id: 'hijack',
+    title: 'Hijack',
+    imgSrc: 'hijack.png',
+    initial: true,
+    genre: 'Thriller'
+  },
+  {
+    id: 'theCrodwenRoom',
+    title: 'The Crodwen Room',
+    imgSrc: 'theCrodwenRoom.png',
+    initial: false,
+    genre: 'Thriller'
+  },
+  {
+    id: 'swagger',
+    title: 'Swagger',
+    imgSrc: 'swagger.png',
+    initial: false,
+    genre: 'Thriller'
+  }
+];

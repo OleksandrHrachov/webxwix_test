@@ -21,6 +21,9 @@
     "priceFrom": "Від",
     "details": "Детальніше",
     "exploreIn": "Ознайомтеся з",
-    "products": "Продуктами"   
+    "products": "Продуктами"
+  },
+  "slider": {
+    "streamNow": "Дивитись"
   }
 }
