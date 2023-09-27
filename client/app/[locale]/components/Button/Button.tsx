@@ -11,7 +11,7 @@ interface IProps {
 
 export default function Button({ children, type, onSelect, isSelect }: IProps) {
   return (
-    <button className={classNames(`button--${type}`, {['button--selected']: isSelect})} type="button" onClick={onSelect}>
+    <button className={classNames('button', `button--${type}`, {['button--selected']: isSelect})} type="button" onClick={onSelect}>
       {children}
     </button>
   );

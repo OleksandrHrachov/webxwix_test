@@ -1,7 +1,7 @@
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
-import { productData } from './db';
+import { productData, sliderData } from './db';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -14,6 +14,6 @@ app.listen(PORT, () => {
 })
 
 app.get('/', (req, res) => {
-  res.send(JSON.stringify(productData));
+  res.send(JSON.stringify({productData: productData, sliderData: sliderData}));
 })
 
