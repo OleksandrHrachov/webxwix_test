@@ -32,9 +32,13 @@
     border-radius: 36px;
     padding: 13px 24px;
     font-weight: 700;
-
     transition: all 0.5s ease-out;
     border: 1px solid #181818;
+
+    &--selected {
+      background-color: #181818;
+      color: #e8e8e8;
+    }
 
     &:hover {
       background-color: #181818;
@@ -42,8 +46,18 @@
     }
   }
 
-  &--selected {
+  &--category-footer {
     background-color: #181818;
-    color: #e8e8e8;
+    text-decoration: none;
+    border-radius: 36px;
+    padding: 13px 24px;
+    font-weight: 700;
+    transition: all 0.5s ease-out;
+    border: 1px solid #F2F2F2;
+    height: 48px;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

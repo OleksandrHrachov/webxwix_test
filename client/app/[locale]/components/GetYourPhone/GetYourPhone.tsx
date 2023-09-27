@@ -17,11 +17,11 @@ interface IProps {
 }
 
 export default function GetYourPhone() {
-  const { selectedGroup, productCategories } = useAppSelector(
+  const { allProducts, productCategories } = useAppSelector(
     (state) => state.products
   );
 
-  const phoneExample = selectedGroup
+  const phoneExample = allProducts
     .filter((item) => item.group === Categories.IPHONE)
     .slice(0, 4);
 

@@ -25,5 +25,92 @@
   },
   "slider": {
     "streamNow": "Дивитись"
+  },
+  "footer": {
+    "buttons": {
+      "newsroom": "Новини",
+      "appleLeadership": "Лідерство Apple",
+      "careerOpportunities": "Карєрні Mожливості",
+      "investor": "Інвестори",
+      "ethicCompliance": "Етика & Комплаєнс",
+      "events": "Події",
+      "contactApple": "Зверніться до Apple"
+    },
+    "shopLearn": {
+      "shopLearn": "Магазин & Навчання",
+      "store": "Магазин",
+      "mac": "Mac",
+      "iPad": "iPad",
+      "iPhone": "iPhone",
+      "watch": "Watch",
+      "vision": "Vision",
+      "airPods": "AirPods",
+      "tvHome": "TV & Дім",
+      "airTag": "AirTag",
+      "accessories": "Аксесуари",
+      "giftCard": "Подарункові карти"
+    },
+    "appleStore": {
+      "appleStore": "Apple Магазин",
+      "findStore": "Знайти магазин",
+      "geniusBar": "Бар Genius",
+      "todayAtApple": "Сьогодні в Apple",
+      "appleCamp": "Apple Camp",
+      "appleStoreApp": "Додаток Apple Store",
+      "certifiedRefurbished": "Сертифікований ремонт",
+      "appleTradeIn": "Apple Торги",
+      "financing": "Фінансування",
+      "carrierDealsAtApple": "Угоди операторів в Apple",
+      "orderStatus": "Статус Замовлення",
+      "shoppingHelp": "Довідник покупок"
+    },
+    "forBussiness": {
+      "forBussiness": "Для Бізнесу",
+      "appleAndBusinnes": "Apple та Бізнес",
+      "shopAndBusiness": "Магазин для Бізнесу"
+    },
+    "forEducation": {
+      "forEducation": "Для освіти",
+      "appleAndEducation": "Apple і Освіта",
+      "shopForK-12": "Магазин для K-12",
+      "shopForCollege": "Магазин для коледжу"
+    },
+    "forHelthcare": {
+      "forHelthcare": "Для Здоров'я",
+      "appleAndHelthcare": "Apple та здоров'я",
+      "healthOnAppleWatch": "Здоров'я на Apple Watch",
+      "helthRecords": "Медичні записи на iPhone"
+    },
+    "entertainment": {
+      "entertainment": "Розваги",
+      "appleOne": "Apple One",
+      "appleTv": "Apple TV+",
+      "appleMusic": "Apple Музика",
+      "appleArcade": "Apple Ігри",
+      "appleFitness": "Apple Фітнес+",
+      "appleNews": "Apple Новини+",
+      "appleProdcast": "Apple Prodcast",
+      "appleBooks": "Apple Книги",
+      "appStore": "App Store"
+    },
+    "appleWallet": {
+      "appleWallet": "Apple Гаманець",
+      "wallet": "Гаманець",
+      "appleCard": "Apple Карта",
+      "applePay": "Apple Оплата",
+      "appleCash": "Apple Готівка"
+    },
+    "account": {
+      "account": "Обліковий Запис",
+      "manageYourApple": "Керуйте своїм Apple ID",
+      "appleStoreAccount": "Обліковий запис Apple Store",
+      "iCloud": "iCloud.com"
+    },
+    "copyRights": "Усі права захищено.",
+    "privacyPolicy": "Політика Конфіденційності",
+    "termsOfUse": "Умови Використання",
+    "salesAndRefunds": "Продажі та Відшкодування",
+    "legal": "Права",
+    "siteMap": "Мапа сайту"
   }
 }
