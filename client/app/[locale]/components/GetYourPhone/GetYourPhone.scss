@@ -3,9 +3,22 @@
   padding-top: 42px;
   margin-bottom: 80px;
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #181818;
+    }
+  }
+
   &__title {
     font-size: 36px;
-    margin-bottom: 24px;
     font-weight: 400;
 
     &--bold {

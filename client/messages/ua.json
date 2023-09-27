@@ -8,7 +8,8 @@
   },
   "getPhone": {
     "getYour": "Обери свій",
-    "iPhone": "iPhone"
+    "iPhone": "iPhone",
+    "seeAll": "Побачити все"
   },
   "productCard": {
     "priceFrom": "Від",

@@ -8,7 +8,8 @@
   },
   "getPhone": {
     "getYour": "Get Your",
-    "iPhone": "iPhone"
+    "iPhone": "iPhone",
+    "seeAll": "See All"
   },
   "productCard": {
     "priceFrom": "From",

@@ -1,11 +1,14 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { ProductCard } from "../ProductCard";
-import { Categories } from '../../../store/types';
+import { Categories } from "../../../store/types";
+import arrowRight from "../../../../public/arrowRight.svg";
 import "./GetYourPhone.scss";
 
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { setState, selectGroup } from "../../../store/productSlice";
+import Link from "next/link";
+import Image from "next/image";
 
 interface IProps {
   title: string;
@@ -19,18 +22,31 @@ export default function GetYourPhone() {
     (state) => state.products
   );
 
-  const phoneExample = selectedGroup.filter((item) => item.group === Categories.IPHONE).slice(0, 4);
-  
+  const phoneExample = selectedGroup
+    .filter((item) => item.group === Categories.IPHONE)
+    .slice(0, 4);
+
   const t = useTranslations();
 
   return (
     <section className="get-phone">
-      <h3 className="get-phone__title">
-        {t("getPhone.getYour")}{" "}
-        <span className="explore-product__title--bold">
-          {t("getPhone.iPhone")}
-        </span>
-      </h3>
+      <div className="get-phone__header">
+        <h3 className="get-phone__title">
+          {t("getPhone.getYour")}{" "}
+          <span className="explore-product__title--bold">
+            {t("getPhone.iPhone")}
+          </span>
+        </h3>
+        <Link className="get-phone__header-link" href="#">
+          {t("getPhone.seeAll")}{" "}
+          <Image
+            className="get-phone__header-link-img"
+            priority
+            src={arrowRight}
+            alt="arrowRight"
+          />
+        </Link>
+      </div>
       <div>
         <div className="get-phone__list">
           {phoneExample &&
