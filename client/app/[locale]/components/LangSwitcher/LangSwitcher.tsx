@@ -5,6 +5,7 @@ import Link from "next-intl/link";
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import { setLocale } from "../../../store/productSlice";
 import { useRouter } from "next/router";
+import './LangSwitcher.scss';
 
 export default function LangSwitcher() {
   
@@ -57,11 +58,11 @@ export default function LangSwitcher() {
         <option selected={langRef.current === 'en'} value="en">EN</option>
         <option selected={langRef.current === 'ua'} value="ua">UA</option>
       </select> */}
-      <Link href="/" locale="en">
+      <Link className="lang__switch" href="/" locale="en">
         EN
       </Link>
-      |
-      <Link href="/" locale="ua">
+      <span className="lang__divider">|</span>
+      <Link className="lang__switch" href="/" locale="ua">
         UA
       </Link>
     </div>

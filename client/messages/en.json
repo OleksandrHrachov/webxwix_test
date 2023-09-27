@@ -25,5 +25,92 @@
   },
   "slider": {
     "streamNow": "Stream Now"
+  },
+  "footer": {
+    "buttons": {
+      "newsroom": "Newsroom",
+      "appleLeadership": "Apple Leadership",
+      "careerOpportunities": "Career Opportunities",
+      "investor": "Investor",
+      "ethicCompliance": "Ethic & Compliance",
+      "events": "Events",
+      "contactApple": "Contact Apple"
+    },
+    "shopLearn": {
+      "shopLearn": "Shop & Learn",
+      "store": "Store",
+      "mac": "Mac",
+      "iPad": "iPad",
+      "iPhone": "iPhone",
+      "watch": "Watch",
+      "vision": "Vision",
+      "airPods": "AirPods",
+      "tvHome": "TV & Home",
+      "airTag": "AirTag",
+      "accessories": "Accessories",
+      "giftCard": "Gift Cards"
+    },
+    "appleStore": {
+      "appleStore": "Apple Store",
+      "findStore": "Find a Store",
+      "geniusBar": "Genius Bar",
+      "todayAtApple": "Today at Apple",
+      "appleCamp": "Apple Camp",
+      "appleStoreApp": "Apple Store App",
+      "certifiedRefurbished": "Certified Refurbished",
+      "appleTradeIn": "Apple Trade In",
+      "financing": "Financing",
+      "carrierDealsAtApple": "Carrier Deals at Apple",
+      "orderStatus": "Order Status",
+      "shoppingHelp": "Shopping Help"
+    },
+    "forBussiness": {
+      "forBussiness": "For Business",
+      "appleAndBusinnes": "Apple and Business",
+      "shopAndBusiness": "Shop for Business"
+    },
+    "forEducation": {
+      "forEducation": "For Education",
+      "appleAndEducation": "Apple and Education",
+      "shopForK-12": "Shop for K-12",
+      "shopForCollege": "Shop for College"
+    },
+    "forHelthcare": {
+      "forHelthcare": "For Healthcare",
+      "appleAndHelthcare": "Apple in Healthcare",
+      "healthOnAppleWatch": "Health on Apple Watch",
+      "helthRecords": "Health Records on iPhone"
+    },
+    "entertainment": {
+      "entertainment": "Entertainment",
+      "appleOne": "Apple One",
+      "appleTv": "Apple TV+",
+      "appleMusic": "Apple Music",
+      "appleArcade": "Apple Arcade",
+      "appleFitness": "Apple Fitness+",
+      "appleNews": "Apple News+",
+      "appleProdcast": "Apple Prodcast",
+      "appleBooks": "Apple Books",
+      "appStore": "App Store"
+    },
+    "appleWallet": {
+      "appleWallet": "Apple Wallet",
+      "wallet": "Wallet",
+      "appleCard": "Apple Card",
+      "applePay": "Apple Pay",
+      "appleCash": "Apple Cash"
+    },
+    "account": {
+      "account": "Account",
+      "manageYourApple": "Manage Your Apple ID",
+      "appleStoreAccount": "Apple Store Account",
+      "iCloud": "iCloud.com"
+    },
+    "copyRights": "All rightsreserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "salesAndRefunds": "Sales and Refunds",
+    "legal": "Legal",
+    "siteMap": "Site Map"
   }
 }

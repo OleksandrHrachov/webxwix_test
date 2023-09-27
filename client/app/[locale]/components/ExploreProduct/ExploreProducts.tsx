@@ -1,13 +1,13 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ProductCard } from "../ProductCard";
 import { Button } from "../Button";
 import { DEFAULT_PROD_CATEGORY } from "../../../store/productSlice";
 import { useTranslations } from "next-intl";
 import "./ExploreProduct.scss";
-
 import { useAppDispatch, useAppSelector } from "../../../store/hooks";
-import { setState, selectGroup } from "../../../store/productSlice";
+import { selectGroup } from "../../../store/productSlice";
+
 interface IProps {
   title: string;
   imgSrc: string;
@@ -16,23 +16,13 @@ interface IProps {
 }
 
 export default function ExploreProducts() {
+  const [currentCategory, setCurrentCategory] = useState(DEFAULT_PROD_CATEGORY);
   const { selectedGroup, productCategories } = useAppSelector(
     (state) => state.products
   );
+
   const dispatch = useAppDispatch();
   const t = useTranslations();
-
-  const [currentCategory, setCurrentCategory] = useState(DEFAULT_PROD_CATEGORY);
-
-  useEffect(() => {
-    const getData = async () => {
-      const response = await fetch(`http://localhost:5000/?lang=en`);
-      const data = await response.json();
-      dispatch(setState(data));
-    };
-
-    getData();
-  }, []);
 
   const setGroup = (group: string) => {
     dispatch(selectGroup(group));

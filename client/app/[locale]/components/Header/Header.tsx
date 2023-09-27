@@ -15,9 +15,9 @@ export default function Header() {
   return (
     <header className={classNames("container", "header")}>
       <HeaderNav />
-      <div className="header__logo">
+      <Link href={"#"} className="header__logo">
         <Logo />
-      </div>
+      </Link>
 
       <div className="header__right-side">
         <div className="header__search">
