@@ -15,6 +15,10 @@
   @include onDesktop {
     padding: 0 30px;
   }
+
+  @include onMobile {
+    padding: 0 15px;
+  }
 }
 
 body {

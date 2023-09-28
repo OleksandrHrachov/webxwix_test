@@ -1,13 +1,23 @@
+@import '../../../_utils/mixins.scss';
+
 .explore-product {
   margin: 0 auto;
   padding-top: 42px;
   margin-bottom: 80px;
+
+  @include onTablet {
+    margin-bottom:  50px;
+  }
 
   &__title {
     text-align: center;
     font-size: 36px;
     margin-bottom: 24px;
     font-weight: 400;
+
+    @include onMobile {
+      font-size: 30px;
+    }
 
     &--bold {
       font-weight: 900;
@@ -26,12 +36,22 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include onMobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     &-item {
       flex-grow: 1;
       max-width: 50%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
+      @include onMobile {
+        max-width: 100%;
+        flex-grow: initial;
+      }
     }
   }
 }
