@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Button } from "../Button";
 import { LangSwitcher } from "../LangSwitcher";
@@ -15,9 +16,22 @@ import {
   account,
   legalLinks,
 } from "./links";
+import { useState } from "react";
+import arrowDown from "../../../../public/chevron_down.svg";
+import Image from "next/image";
+import classNemes from "classnames";
 
 export default function Footer() {
   const t = useTranslations();
+
+  const [hideShopLearnLinks, setHideShopLearnLinks] = useState(true);
+  const [hideAppleStoreLinks, setHideAppleStoreLinks] = useState(true);
+  const [hideForBusinnessLinks, setHideForBusinnessLinks] = useState(true);
+  const [hideForEducation, setHideForEducation] = useState(true);
+  const [hideForHelthcare, setHideForHelthcare] = useState(true);
+  const [hideEntertainment, setHideEntertainment] = useState(true);
+  const [hideAppleWallet, setHideAppleWallet] = useState(true);
+  const [hideAccount, setHideAccount] = useState(true);
   return (
     <footer className="footer">
       <div className="footer__nav">
@@ -36,8 +50,31 @@ export default function Footer() {
           <div className="footer__list-col">
             <h5 className="footer__list-title">
               {t(`footer.shopLearn.${shopLearnLinks.title}`)}
+
+              {!hideShopLearnLinks ? (
+                <Image
+                  className="footer__list-title-switch-close"
+                  priority
+                  src={arrowDown}
+                  alt="arrow"
+                  onClick={() => setHideShopLearnLinks(!hideShopLearnLinks)}
+                />
+              ) : (
+                <Image
+                  className="footer__list-title-switch"
+                  priority
+                  src={arrowDown}
+                  alt="arrow"
+                  onClick={() => setHideShopLearnLinks(!hideShopLearnLinks)}
+                />
+              )}
             </h5>
-            <ul className="footer__list-section">
+
+            <ul
+              className={classNemes("footer__list-section", {
+                ["footer__list-section--hide"]: hideShopLearnLinks,
+              })}
+            >
               {shopLearnLinks.links.map((item) => (
                 <li className="footer__list-item" key={item.title}>
                   <Link className="footer__list-link" href={item.href}>
@@ -50,8 +87,30 @@ export default function Footer() {
           <div className="footer__list-col">
             <h5 className="footer__list-title">
               {t(`footer.appleStore.${appleStoreLinks.title}`)}
+
+              {!hideAppleStoreLinks ? (
+                <Image
+                  className="footer__list-title-switch-close"
+                  priority
+                  src={arrowDown}
+                  alt="arrow"
+                  onClick={() => setHideAppleStoreLinks(!hideAppleStoreLinks)}
+                />
+              ) : (
+                <Image
+                  className="footer__list-title-switch"
+                  priority
+                  src={arrowDown}
+                  alt="arrow"
+                  onClick={() => setHideAppleStoreLinks(!hideAppleStoreLinks)}
+                />
+              )}
             </h5>
-            <ul className="footer__list-section">
+            <ul
+              className={classNemes("footer__list-section", {
+                ["footer__list-section--hide"]: hideAppleStoreLinks,
+              })}
+            >
               {appleStoreLinks.links.map((item) => (
                 <li className="footer__list-item" key={item.title}>
                   <Link className="footer__list-link" href={item.href}>
@@ -65,8 +124,34 @@ export default function Footer() {
             <div className="footer__list-col-row-1">
               <h5 className="footer__list-title">
                 {t(`footer.forBussiness.${forBusinnessLinks.title}`)}
+
+                {!hideForBusinnessLinks ? (
+                  <Image
+                    className="footer__list-title-switch-close"
+                    priority
+                    src={arrowDown}
+                    alt="arrow"
+                    onClick={() =>
+                      setHideForBusinnessLinks(!hideForBusinnessLinks)
+                    }
+                  />
+                ) : (
+                  <Image
+                    className="footer__list-title-switch"
+                    priority
+                    src={arrowDown}
+                    alt="arrow"
+                    onClick={() =>
+                      setHideForBusinnessLinks(!hideForBusinnessLinks)
+                    }
+                  />
+                )}
               </h5>
-              <ul className="footer__list-section">
+              <ul
+                className={classNemes("footer__list-section", {
+                  ["footer__list-section--hide"]: hideForBusinnessLinks,
+                })}
+              >
                 {forBusinnessLinks.links.map((item) => (
                   <li className="footer__list-item" key={item.title}>
                     <Link className="footer__list-link" href={item.href}>
@@ -79,8 +164,29 @@ export default function Footer() {
             <div className="footer__list-col-row-2">
               <h5 className="footer__list-title">
                 {t(`footer.forEducation.${forEducation.title}`)}
+                {!hideForEducation ? (
+                  <Image
+                    className="footer__list-title-switch-close"
+                    priority
+                    src={arrowDown}
+                    alt="arrow"
+                    onClick={() => setHideForEducation(!hideForEducation)}
+                  />
+                ) : (
+                  <Image
+                    className="footer__list-title-switch"
+                    priority
+                    src={arrowDown}
+                    alt="arrow"
+                    onClick={() => setHideForEducation(!hideForEducation)}
+                  />
+                )}
               </h5>
-              <ul className="footer__list-section">
+              <ul
+                className={classNemes("footer__list-section", {
+                  ["footer__list-section--hide"]: hideForEducation,
+                })}
+              >
                 {forEducation.links.map((item) => (
                   <li className="footer__list-item" key={item.title}>
                     <Link className="footer__list-link" href={item.href}>
@@ -93,8 +199,29 @@ export default function Footer() {
             <div className="footer__list-col-row-3">
               <h5 className="footer__list-title">
                 {t(`footer.forHelthcare.${forHelthcare.title}`)}
+                {!hideForHelthcare ? (
+                  <Image
+                    className="footer__list-title-switch-close"
+                    priority
+                    src={arrowDown}
+                    alt="arrow"
+                    onClick={() => setHideForHelthcare(!hideForHelthcare)}
+                  />
+                ) : (
+                  <Image
+                    className="footer__list-title-switch"
+                    priority
+                    src={arrowDown}
+                    alt="arrow"
+                    onClick={() => setHideForHelthcare(!hideForHelthcare)}
+                  />
+                )}
               </h5>
-              <ul className="footer__list-section">
+              <ul
+                className={classNemes("footer__list-section", {
+                  ["footer__list-section--hide"]: hideForHelthcare,
+                })}
+              >
                 {forHelthcare.links.map((item) => (
                   <li className="footer__list-item" key={item.title}>
                     <Link className="footer__list-link" href={item.href}>
@@ -108,8 +235,29 @@ export default function Footer() {
           <div className="footer__list-col">
             <h5 className="footer__list-title">
               {t(`footer.entertainment.${entertainment.title}`)}
+              {!hideEntertainment ? (
+                <Image
+                  className="footer__list-title-switch-close"
+                  priority
+                  src={arrowDown}
+                  alt="arrow"
+                  onClick={() => setHideEntertainment(!hideEntertainment)}
+                />
+              ) : (
+                <Image
+                  className="footer__list-title-switch"
+                  priority
+                  src={arrowDown}
+                  alt="arrow"
+                  onClick={() => setHideEntertainment(!hideEntertainment)}
+                />
+              )}
             </h5>
-            <ul className="footer__list-section">
+            <ul
+              className={classNemes("footer__list-section", {
+                ["footer__list-section--hide"]: hideEntertainment,
+              })}
+            >
               {entertainment.links.map((item) => (
                 <li className="footer__list-item" key={item.title}>
                   <Link className="footer__list-link" href={item.href}>
@@ -123,8 +271,29 @@ export default function Footer() {
             <div className="footer__list-col-row-1">
               <h5 className="footer__list-title">
                 {t(`footer.appleWallet.${appleWallet.title}`)}
+                {!hideAppleWallet ? (
+                  <Image
+                    className="footer__list-title-switch-close"
+                    priority
+                    src={arrowDown}
+                    alt="arrow"
+                    onClick={() => setHideAppleWallet(!hideAppleWallet)}
+                  />
+                ) : (
+                  <Image
+                    className="footer__list-title-switch"
+                    priority
+                    src={arrowDown}
+                    alt="arrow"
+                    onClick={() => setHideAppleWallet(!hideAppleWallet)}
+                  />
+                )}
               </h5>
-              <ul className="footer__list-section">
+              <ul
+                className={classNemes("footer__list-section", {
+                  ["footer__list-section--hide"]: hideAppleWallet,
+                })}
+              >
                 {appleWallet.links.map((item) => (
                   <li className="footer__list-item" key={item.title}>
                     <Link className="footer__list-link" href={item.href}>
@@ -137,8 +306,29 @@ export default function Footer() {
             <div className="footer__list-col-row-2">
               <h5 className="footer__list-title">
                 {t(`footer.account.${account.title}`)}
+                {!hideAccount ? (
+                  <Image
+                    className="footer__list-title-switch-close"
+                    priority
+                    src={arrowDown}
+                    alt="arrow"
+                    onClick={() => setHideAccount(!hideAccount)}
+                  />
+                ) : (
+                  <Image
+                    className="footer__list-title-switch"
+                    priority
+                    src={arrowDown}
+                    alt="arrow"
+                    onClick={() => setHideAccount(!hideAccount)}
+                  />
+                )}
               </h5>
-              <ul className="footer__list-section">
+              <ul
+                className={classNemes("footer__list-section", {
+                  ["footer__list-section--hide"]: hideAccount,
+                })}
+              >
                 {account.links.map((item) => (
                   <li className="footer__list-item" key={item.title}>
                     <Link className="footer__list-link" href={item.href}>

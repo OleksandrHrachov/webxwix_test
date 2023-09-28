@@ -1,3 +1,5 @@
+@import "../../../_utils/mixins.scss";
+
 .button {
   display: flex;
   align-items: center;
@@ -54,7 +56,10 @@
     font-weight: 700;
     transition: all 0.5s ease-out;
     border: 1px solid #F2F2F2;
-    height: 48px;
+
+    @include onTablet {
+      padding: 10px 20px;
+    }
 
     &:hover {
       opacity: 0.5;
