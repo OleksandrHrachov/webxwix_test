@@ -16,4 +16,9 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
   res.send(JSON.stringify({productData: productData, sliderData: sliderData}));
 })
+app.get('/product/:id', (req, res) => {
+  const id = req.params.id
+  const product = productData.filter(prod => prod.id === id);
+  res.send(JSON.stringify(product));
+})
 

@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header className={classNames("container", "header")}>
       <HeaderNav />
-      <Link href={"#"} className="header__logo">
+      <Link href={"/"} className="header__logo">
         <Logo />
       </Link>
 

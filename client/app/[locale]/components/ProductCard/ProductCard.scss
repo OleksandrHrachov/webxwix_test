@@ -42,4 +42,9 @@
     width: 100%;
     object-fit: contain;
   }
+
+  &__link {
+    text-decoration: none;
+    color: #e8e8e8;
+  }
 }

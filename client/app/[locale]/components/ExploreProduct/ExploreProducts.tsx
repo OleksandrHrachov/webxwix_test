@@ -13,6 +13,7 @@ interface IProps {
   imgSrc: string;
   group: string;
   price: string;
+  id: string;
 }
 
 export default function ExploreProducts() {
@@ -57,6 +58,7 @@ export default function ExploreProducts() {
             selectedGroup.slice(0, 8).map((item: IProps) => (
               <div key={item.title} className="explore-product__list-item">
                 <ProductCard
+                id={item.id}
                   title={item.title}
                   imgSrc={item.imgSrc}
                   group={item.group}

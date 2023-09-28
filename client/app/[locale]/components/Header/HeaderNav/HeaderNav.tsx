@@ -8,7 +8,7 @@ import Image from "next/image";
 import "./HeaderNav.scss";
 
 const menuList = [
-  { title: "header.home", href: "#", icon: "" },
+  { title: "header.home", href: "/", icon: "" },
   { title: "header.products", href: "#", icon: arrowDown },
   { title: "header.entertainment", href: "#", icon: "" },
   { title: "header.support", href: "#", icon: "" },
@@ -56,7 +56,6 @@ export default function HeaderNav() {
             <Link
               onClick={() => {
                 setActiveLinkIdx(index);
-                setShowMenu(!showMenu);
               }}
               className={classNames("nav-list__link", {
                 ["nav-list__link--active"]: activeLinkIdx === index,

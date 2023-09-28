@@ -28,7 +28,7 @@ export default function SliderItem({ title, imgSrc, initial, genre }: IProps) {
             src={`http://localhost:5000/${imgSrc}`}
             alt={title}
           />
-          <Button type="details">{t('slider.streamNow')} <Image className="slide-initial__btn-img" priority src={playIcon} alt="play"/></Button>
+          <Button href="#" type="link">{t('slider.streamNow')} <Image className="slide-initial__btn-img" priority src={playIcon} alt="play"/></Button>
         </div>
       ) : (
         <div className="slide-regular">

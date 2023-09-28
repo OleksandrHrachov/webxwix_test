@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch(`http://localhost:5000/?lang=en`);
+      const response = await fetch(`http://localhost:5000/`);
       const data = await response.json();
       dispatch(setState(data));
     };

@@ -14,6 +14,7 @@ interface IProps {
   imgSrc: string;
   group: string;
   price: string;
+  id: string;
 }
 
 export default function GetYourPhone() {
@@ -51,6 +52,7 @@ export default function GetYourPhone() {
           phoneExample.map((item: IProps) => (
             <div key={item.title} className="get-phone__list-item">
               <ProductCard
+                id={item.id}
                 title={item.title}
                 imgSrc={item.imgSrc}
                 group={item.group}

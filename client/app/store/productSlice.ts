@@ -7,6 +7,7 @@ export interface IProductCard {
   imgSrc: string;
   group: string;
   price: string;
+  id: string;
 }
 
 export interface ISlide {

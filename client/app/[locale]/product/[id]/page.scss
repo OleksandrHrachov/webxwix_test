@@ -1,0 +1,39 @@
+@import '../../../_utils/mixins.scss';
+
+.product-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0;
+
+  
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 20px;
+
+    &-img {
+      transform: rotate(180deg)
+
+    }
+  }
+
+  &__product {
+    @include onTablet {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+  
+    @include onMobile {
+      max-width: 250px;
+      width: 250px;
+      height: auto;
+    }
+
+  }
+}
