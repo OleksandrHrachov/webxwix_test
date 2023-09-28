@@ -346,20 +346,17 @@ export default function Footer() {
               Copyright &copy; 2023 Apple Inc. {t("footer.copyRights")}
             </div>
             <div className="footer__bottom-links">
+              <ul className="footer__bottom-links-list">
               {legalLinks.map((link, idx, arr) => {
                 return (
-                  <>
-                    <Link
-                      className="footer__bottom-links-item"
-                      key={link.title}
-                      href={link.href}
-                    >
-                      {t(`footer.${link.title}`)}
-                    </Link>
-                    {idx !== arr.length - 1 ? "|" : ""}
-                  </>
+                  <li className="footer__bottom-links-wrapper" key={link.title}>
+                    <Link className="footer__bottom-links-item" href={link.href}>{t(`footer.${link.title}`)}</Link>
+                    {idx !== arr.length - 1 ? (<span>|</span>) : (null)}
+                  </li>
                 );
               })}
+              </ul>
+              
             </div>
           </div>
           <div className="footer__bottom-lang">

@@ -1,4 +1,4 @@
-@import '../_utils//mixins.scss';
+@import "../_utils//mixins.scss";
 
 * {
   box-sizing: border-box;
@@ -22,5 +22,11 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
+}
+
+.blur {
+  filter: blur(15px);
+  width: 100%;
+  height: 100%;
 }
