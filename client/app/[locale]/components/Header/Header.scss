@@ -1,3 +1,5 @@
+@import "../../../_utils/mixins.scss";
+
 .header {
   position: fixed;
   z-index: 10;
@@ -32,6 +34,10 @@
     border: 1px solid #FAFAFA;
     max-width: 344px;
     min-width: 250px;
+
+    @include onMobile {
+      display: none;
+    }
 
     &-icon {
       position: absolute;

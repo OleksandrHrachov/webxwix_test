@@ -164,12 +164,24 @@
         margin-bottom: 16px;
       }
 
+      &-list {
+        list-style: none;
+        display: flex;
+      }
+
+      &-wrapper:first-child {
+        a {
+          padding-left: 0;
+        }
+      }
+
       &-item {
         text-decoration: none;
         color: #464646;
         line-height: 22px;
         margin: 0 10px;
         font-size: 14px;
+        padding-left: 10px;
 
         &:first-child {
           margin-left: 0;
