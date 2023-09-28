@@ -1,4 +1,4 @@
-## RUN PROJECT
+# RUN PROJECT
 - clone project
 - open a terminal
 - go to the server folder (`cd server`) and run (`npm install`)
@@ -8,13 +8,18 @@
 - go back to the client terminal and run (`npm run dev`)
 - follow the link that appears in terminal
 
-## Description 
-# FE
+# Description 
+## Features
+- The site is adapted for tablet and phone.
+- There is localization for two languages: English and Ukrainian.
+- "Details" button takes you to the product page.
+
+## FE
 - Next 13
 - TypeScript
 - Redux-toolkit
 - next-intl
 - SASS(SCSS)
 
-# BE
+## BE
 - Express
