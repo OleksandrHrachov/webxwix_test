@@ -37,6 +37,10 @@
     transition: all 0.5s ease-out;
     border: 1px solid #181818;
 
+    @include onTablet {
+      padding: 10px 20px;
+    }
+
     &--selected {
       background-color: #181818;
       color: #e8e8e8;

@@ -60,8 +60,6 @@
             margin-bottom: 20px;
           }
         }
-        &-3 {
-        }
       }
     }
 
@@ -167,12 +165,7 @@
       &-list {
         list-style: none;
         display: flex;
-      }
-
-      &-wrapper:first-child {
-        a {
-          padding-left: 0;
-        }
+        flex-wrap: wrap;
       }
 
       &-item {

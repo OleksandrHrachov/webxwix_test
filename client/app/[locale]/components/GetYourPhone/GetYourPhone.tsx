@@ -46,20 +46,18 @@ export default function GetYourPhone() {
           />
         </Link>
       </div>
-      <div>
-        <div className="get-phone__list">
-          {phoneExample &&
-            phoneExample.map((item: IProps) => (
-              <div key={item.title} className="get-phone__list-item">
-                <ProductCard
-                  title={item.title}
-                  imgSrc={item.imgSrc}
-                  group={item.group}
-                  price={item.price}
-                />
-              </div>
-            ))}
-        </div>
+      <div className="get-phone__list">
+        {phoneExample &&
+          phoneExample.map((item: IProps) => (
+            <div key={item.title} className="get-phone__list-item">
+              <ProductCard
+                title={item.title}
+                imgSrc={item.imgSrc}
+                group={item.group}
+                price={item.price}
+              />
+            </div>
+          ))}
       </div>
     </section>
   );
