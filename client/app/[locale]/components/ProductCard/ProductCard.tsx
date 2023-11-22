@@ -20,6 +20,7 @@ export default function ProductCard({
   hideBtn = false,
 }: IProps) {
   const t = useTranslations();
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:5000/';
 
   return (
     <div className="product-card">
@@ -33,7 +34,7 @@ export default function ProductCard({
 
         <img
           className="product-card__img"
-          src={`http://localhost:5000/${imgSrc}`}
+          src={`${baseUrl}${imgSrc}`}
           alt={title}
         />
         {!hideBtn && (

@@ -14,6 +14,7 @@ interface IProps {
 
 export default function SliderItem({ title, imgSrc, initial, genre }: IProps) {
   const t = useTranslations();
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:5000/';
   return (
     <div className="slide">
       {initial ? (
@@ -25,7 +26,7 @@ export default function SliderItem({ title, imgSrc, initial, genre }: IProps) {
 
           <img
             className="slide-initial__img"
-            src={`http://localhost:5000/${imgSrc}`}
+            src={`${baseUrl}${imgSrc}`}
             alt={title}
           />
           <Button href="#" type="link">{t('slider.streamNow')} <Image className="slide-initial__btn-img" priority src={playIcon} alt="play"/></Button>
@@ -33,7 +34,7 @@ export default function SliderItem({ title, imgSrc, initial, genre }: IProps) {
       ) : (
         <div className="slide-regular">
           <span className="slide-regular__title">{title}</span>
-          <img src={`http://localhost:5000/${imgSrc}`} alt={title} />
+          <img src={`${baseUrl}${imgSrc}`} alt={title} />
         </div>
       )}
     </div>

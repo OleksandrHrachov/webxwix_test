@@ -20,7 +20,8 @@ interface IResp {
 }
 
 async function getProduct(id: string): Promise<IResp[]> {
-  const response = await fetch(`http://localhost:5000/product/${id}`);
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:5000/';
+  const response = await fetch(`${baseUrl}product/${id}`);
   const data = response.json();
   return data;
 }
